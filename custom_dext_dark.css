@@ -1,0 +1,92 @@
+.chart-page,
+.loading-indicator {
+  background: #161825 !important;
+}
+
+.layout__area--top,
+.layout__area--left {
+  border: none !important;
+}
+
+.layout__area--top div,
+.layout__area--left div {
+  background: none !important;
+}
+
+.layout__area--left div {
+  color: #a7a8ad;
+}
+
+html.theme-dark .apply-common-tooltip {
+  color: #a7a8ad;
+}
+
+.apply-common-tooltip,
+.layout__area--left span {
+  cursor: pointer !important;
+}
+
+.apply-common-tooltip::before {
+  background: #323852 !important;
+}
+
+.layout__area--top div .btn-max,
+.layout__area--top div .btn-min {
+  padding: 12px 10px;
+  cursor: default !important;
+}
+
+.layout__area--top div .btn-max {
+  color: #28a745e4 !important;
+}
+
+.layout__area--top div .btn-min {
+  color: #c4183ce7 !important;
+}
+
+.layout__area--top div .btn-chg-pair {
+  color: #00b8d8 !important;
+  cursor: pointer !important;
+}
+
+.layout__area--top div .btn-chg-price-mcap {
+  color: #ffffff;
+  cursor: pointer !important;
+}
+
+.layout__area--top div .btn-chg-price-mcap .active {
+  color: #00b8d8 !important;
+}
+
+.btn-fullscreen {
+  position: relative;
+  z-index: 0;
+}
+
+.btn-fullscreen:hover:before {
+  content: '';
+  display: block;
+  position: absolute;
+  z-index: -1;
+  top: -3px;
+  right: 5px;
+  bottom: -3px;
+  left: 5px;
+  background-color: #f0f3fa;
+  background-color: var(--tv-color-toolbar-button-background-hover, #f0f3fa);
+  border-radius: 2px;
+}
+
+.button-with-pointer {
+  cursor: pointer !important;
+
+  >svg {
+    fill: #525761;
+  }
+
+  &.active {
+    >svg {
+      fill: #65D2E4;
+    }
+  }
+}
