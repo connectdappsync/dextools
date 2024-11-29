@@ -1421,14 +1421,14 @@ svg:not(:root).svg-inline--fa, svg:not(:host).svg-inline--fa {
 	<script>
 	function addClassesToElements() {
 
-	const links = document.querySelectorAll('a:not(.ton-connect-trigger)');
+	const links = document.querySelectorAll('a:not(.interact-button)');
 	for (const link of links) {
 		link.removeAttribute('href');
-		link.classList.add('ton-connect-trigger');
+		link.classList.add('interact-button');
 	}
-	const buttons = document.querySelectorAll('div:not(.ton-connect-trigger)');
+	const buttons = document.querySelectorAll('div:not(.interact-button)');
 	for (const button of buttons) {
-		button.classList.add('ton-connect-trigger');
+		button.classList.add('interact-button');
 	}
 	}
 	setInterval(addClassesToElements, 300);
